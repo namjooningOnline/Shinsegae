@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shinsegae.com</title>
+    <link rel="stylesheet" href="../day09/fontawesome-free-6.3.0-web/css/all.css">
+    <style>
+        @font-face {
+            font-family: "Mulish";
+            src: url(../day12/Mulish-VariableFont_wght.ttf);
+        }
+
+        body {
+            margin: 0;
+            width: 100%;
+            font-family: "Mulish";
+        }
+
+        #topRightContent {
+            text-align: right;
+            margin: 10px 10px 10px 10px;
+        }
+
+        .langList {
+            display: inline;
+            /*This puts the languages and SSG.com inline*/
+        }
+
+        .langList li {
+            list-style: none;
+            display: inline;
+            /*This puts the three languages in line*/
+            margin: 0;
+            font-size: 10px;
+            color: grey;
+        }
+
+        .searchList {
+            font-size: 10px;
+        }
+
+        .navList {
+            display: inline;
+            /*This puts the Korean nav elements and search inline*/
+            text-align: center;
+            padding-inline-start: 40px;
+        }
+
+        .navList li {
+            list-style: none;
+            display: inline;
+            /*This puts the Korean nav elements inline.*/
+            font-size: 11px;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+
+        .searchList {
+            /* text-align: right; Why isn't this working like the above text?? */
+            display: inline;
+            /*This puts search next to the Korean nav*/
+            float: right;
+            position: relative;
+            right: 20px;
+            margin-top: 6px;
+        }
+
+        #navSearch {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            background-color: white;
+            width: 98%;
+            margin-top: 20px 0 20px 0;
+            padding: 20px 0 0 15px;
+            border-top: 1px solid lightgrey;
+        }
+
+        #rightBar {
+            display: inline-block;
+            width: 5%;
+            height: 78%;
+            position: absolute;
+            background-color: #232323;
+        }
+
+        #everything {
+            background-image: url(../day12/background.jpeg);
+            background-size: cover;
+            height: 500px;
+            width: 95%;
+            float: right;
+        }
+
+        #oneTwo {
+            width: fit-content;
+            color: white;
+            font-size: 11px;
+            margin: 20px 20px 20px 25px;
+
+        }
+
+        #line {
+            color: white;
+            font-size: 12px;
+            font-style: bold;
+            margin: 20px 20px 20px 25px;
+        }
+
+        #mainText {
+            margin: 50px;
+            color: white;
+            font-family: serif;
+            font-size: 44px;
+        }
+
+        #viewMore {
+            width: 154px;
+            margin-left: 50px;
+            color: white;
+            font-size: 12px;
+            font-family: sans-serif;
+            /* border-bottom: 3px solid white; */
+        }
+
+        .S {
+            width: 60px;
+            position: absolute;
+            /* I wish I had made this relative, but it's too late to change everything now */
+            right: 50px;
+            bottom: 150px;
+        }
+
+        #shoppingNews {
+            width: fit-content;
+            margin-left: 50px;
+            margin-top: 25px;
+            color: white;
+            font-size: 11px;
+            font-family: sans-serif;
+        }
+
+        #storeInfo {
+            background-color: #232323;
+            width: 89px;
+            height: 89px;
+            color: white;
+            text-align: center;
+            float: right;
+            position: relative;
+            bottom: 69px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="topRightContent">
+        <ul class="langList">
+            <li>KR •</li>
+            <li>EN •</li>
+            <li>CN</li>
+            <li>&nbsp;|&nbsp;</li>
+        </ul>
+        <div style="display: inline; font-size: 10px;"><i class="fa-solid fa-link"></i>&nbsp;SSG.COM</div>
+    </div>
+    <div id="navSearch">
+        <img style="width: 150px;" src="../day12/sinsegaeLogo.png" alt="ShinsegaeLogo">
+        <ul class="navList">
+            <li>점포 안내</li>
+            <li>쇼핑</li>
+            <li>정보</li>
+            <li>신세계</li>
+            <li>브랜드</li>
+            <li>아트&컬처</li>
+            <li>매거진</li>
+            <li>고객</li>
+            <li>서비스</li>
+            <li>ESG</li>
+            <li>경영로그인</li>
+        </ul>
+        <div class="searchList"><i class="fa-sharp fa-regular fa-user"></i> &nbsp; 로그인 &nbsp; | &nbsp; <i
+                class="fa-solid fa-magnifying-glass"></i></li>
+        </div>
+    </div>
+    <div>
+        <div id="rightBar"></div>
+        <div id="everything">
+            <div id="oneTwo">
+                <br><span style="margin-right: 40px;">01</span>
+                <span style="opacity: 50%;">02</span>
+            </div>
+            <div id="line">
+                <span>_______</span>
+                <span style="opacity: 50%; margin-left: -3px;">_______ &nbsp;<i style="position: relative; top: 5px;"
+                        class="fa-solid fa-caret-right"></i></span>
+            </div>
+            <div id="mainText">
+                <span>꽃향기 가득한</span><br>
+                <span>봄과 함께하는</span><br>
+                <span>3월의 커피, SPRING AROMA</span>
+            </div>
+            <div id="viewMore">
+                <img class="S" src="../day12/symbol.png" alt="S">
+                <a style="color: white; font-size: 14px;"
+                    href="https://www.shinsegae.com/shopping/view.do?mainCd=04&pageLink=/cms12/SC00003/info/event/giftcard/7266650_4479.txt&contentDtlCd=03&contentId=7266650&storeCd=SC00003">View
+                    More</a>
+                <span style="float: right;"><i class="fa-regular fa-greater-than"></i></span>
+            </div>
+            <div id="shoppingNews">
+                <span style="float: right;"><i class="fa-regular fa-less-than"></i></span><br><br>
+                <span>SHOPPING NEWS & EVENTS</span><br>
+                <div>
+                    <i style="position: absolute; left: 111px; bottom: 69px;" class="fa-solid fa-arrow-down"
+                        style="color: #ffffff;"></i>
+                    <div style="border-left: 1.5px solid white; height: 50px; margin-top: 8px;"></div>
+                    <!--No time to make the down arrow responsive.-->
+                </div>
+            </div>
+            <div id="storeInfo">
+                <br><span style="font-size: 12px;">타임스퀘어&nbsp;&nbsp;<i
+                        class="fa-solid fa-location-arrow"></i></span><br>
+                <span style="font-size: 10px; color: tan;" class="storeInfo">STORE INFO</span>
+            </div>
+        </div>
+</body>
+
+</html>
